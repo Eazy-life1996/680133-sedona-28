@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Юрий  Пустовой](https://up.htmlacademy.ru/htmlcss/28/user/680133).
-* Наставник: `Неизвестно`.
+* Наставник: [Дмитрий Беллавин](https://htmlacademy.ru/profile/bellavin).
 
 ---
 
