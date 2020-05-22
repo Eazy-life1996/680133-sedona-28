@@ -24,7 +24,7 @@
 
     <main>
     	<section class="block-slang">
-    	    <h1>sedona</h1>
+    	    <h1 class="visually-hidden">sedona</h1>
             <div class="welcome">
                 <img src="img/welcome.svg" alt="">
             </div>
@@ -34,13 +34,13 @@
     	</section>
         
         <section class="block-sedona">
-        	<h3>
-        		Седона - небольшой городок в аризоне
-        		заслуживающий большего!
-        	</h3>
-        	<p>
-        		Рассмотрим 5 причин, по которым седона круче чем, гранд каньон
-        	</p>
+            <h3>
+                Седона - небольшой городок в аризоне
+                заслуживающий большего!
+            </h3>
+            <p>
+                Рассмотрим 5 причин, по которым седона круче чем, гранд каньон
+            </p>
         </section>
 
         <section class="block-reasons">
@@ -157,17 +157,17 @@
 
 
         <section class="hotel-search">
-        	<h2>
-        		Заинтересовались?
-        	</h2>
-        	<p>
-        		Укажите предпологаемые даты поездки,<br>
-        		и мы покажем вам лучшие предложения гостиниц в седоне
-        	</p>
-        	<button class="button">
-        		Поиск гостиницы в седоне
-        	</button>
-        	<div class="map">
+            <h2>
+               Заинтересовались?
+            </h2>
+            <p>
+                Укажите предпологаемые даты поездки,<br>
+                и мы покажем вам лучшие предложения гостиниц в седоне
+            </p>
+            <button class="button">
+                Поиск гостиницы в седоне
+            </button>
+            <div class="map">
         	<!--Блок для карты -->
                 <img src="img/map.jpg" width="1199" height="473" alt="карта штата">
             </div>
@@ -175,35 +175,52 @@
     </main>
 
     <footer class="footer">
-    	<div class="phone-number">
-    		<p>#visitsedona</p>
-    		<p>ТЕЛ: +7(495) 666-01-66</p>
-    	</div>
+        <div class="phone-number">
+            <p>#visitsedona</p>
+            <p>ТЕЛ: +7(495) 666-01-66</p>
+        </div>
 
-    	<div class="footer-link">
-    		<a href="#">
+        <div class="footer-link">
+            <a href="#">
                 <img src="img/twitter.svg" alt="твитер">
             </a>
-    		<a href="#">
+            <a href="#">
                 <img src="img/facebook.svg" alt="фэйсбук">
             </a>
-    		<a href="#">
+            <a href="#">
                 <img src="img/youtube.svg" alt="ютуб">
             </a>
-    	</div>
+         </div>
 
-    	<div class="footer-developer">
+         <div class="footer-developer">
             <p>website by</p>
-    		<a href="https://htmlacademy.ru/intensive/htmlcss">
-    		  <img src="img/logo-htmlacademy.svg" width="115" height="41" alt="курсы академии">
-    	    </a>
-    	</div>
+            <a href="https://htmlacademy.ru/intensive/htmlcss">
+              <img src="img/logo-htmlacademy.svg" width="115" height="41" alt="курсы академии">
+            </a>
+         </div>
     </footer>
    
    </div>
     
-    <div>
-    	<!-- Для формы -->
+    <div class="form-search">
+    	<form action="https://echo.htmlacademy.ru/" method="post">
+            <label>
+                Дата заезда: <input type="text" name="arrival date" placeholder=" 24 Апреля 2017">
+                    <img src="img/calendar.svg" alt="">
+            </label><br><br>
+            <label>
+                Дата выезда: <input type="text" name="date departure" placeholder="4 Илюля 2017">
+                    <img src="img/calendar.svg" alt="">
+            </label><br><br>
+            <label>
+                Взрослые: <input type="number" name="adults" value="2" min="1" max="15" step="1">
+            </label>
+            <label>
+                Дети: <input type="number" name="kids" value="0" max="15" step="1">
+            </label><br><br>
+            <a href="hotels.html">Найти</a>
+            <!-- <br> временное решение. Также в ТЗ сказано добавить календарики отдельным элементом чтобы можно было в будущем повесить событие на них, я их добавил но по макету они внутри инпута, вот как их туда запихать без помощи CSS я не знаю-->
+        </form>
     </div>
 
   </body>
