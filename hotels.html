@@ -9,25 +9,94 @@
   <div class="wrapper">
   
   <header>
-    	<nav>
-    		<ul class="menu">
-    			<li class="menu-link"><a href="#">Информация</a></li>
-    			<li class="menu-link"><a href="#">Фото и видео</a></li>
-    			<li class="menu-icon">
+        <nav>
+            <ul class="menu">
+                <li class="menu-link"><a href="#">Информация</a></li>
+                <li class="menu-link"><a href="#">Фото и видео</a></li>
+                <li class="menu-icon">
                     <a href="index.html">
                         <img src="img/logo-sedona.svg" width="138" height="70" alt="на главную">
                     </a></li>
-    			<li class="menu-link"><a href="#">Карта штата</a></li>
-    			<li class="menu-link"><a href="hotels.html">Гостиницы</a></li>
-    		</ul>
-    	</nav>
+                <li class="menu-link"><a href="#">Карта штата</a></li>
+                <li class="menu-link"><a href="hotels.html">Гостиницы</a></li>
+            </ul>
+        </nav>
     </header>
 
 
     <main>
-    	<section class="hotels">
-    		<ul class="hotels-list">
-    			<li class="hotels-list list-1">
+        <section class="info-form">
+            <h1 class="visually-hidden">Поиск отеля в седоне</h1>
+            <form action="https://echo.htmlacademy.ru/" method="get">
+                <fieldset class="info-form-infrastructure">
+                    <legend>Инфраструктура:</legend>
+                    <ul class="infrastructure-list">
+                       <li class="infra-list">
+                          <input type="checkbox" name="swimingpool" id="swim-pool" checked>
+                          <label for="swim-pool">Бассейн</label>
+                       </li>
+                       <li class="infra-list">
+                          <input type="checkbox" name="parking" id="parking">
+                          <label for="parking">Парковка</label>
+                       </li>
+                       <li class="infra-list">
+                          <input type="checkbox" name="wi-fi" id="wi-fi">
+                          <label for="wi-fi">wi-fi</label>
+                       </li>
+                    </ul>
+                </fieldset>
+                <fieldset class="info-form-housing">
+                    <legend>Тип жилья:</legend>
+                    <ul class="housing-list">
+                       <li class="h-list">
+                         <input type="checkbox" name="hotel" id="hotel" checked="">
+                         <label for="hotel">Гостиница</label>
+                       </li>
+                       <li class="h-list">
+                         <input type="checkbox" name="motel" id="motel" checked="">
+                         <label for="motel">Мотель</label>
+                       </li>
+                       <li class="h-list">
+                         <input type="checkbox" name="apartments" id="apartments" checked>
+                         <label for="apartments">Апартаменты</label>
+                       </li>
+                    </ul>
+                </fieldset>
+                <fieldset class="info-form-price">
+                    <legend>Стоимость в сутки (р):</legend>
+                    <div>
+                        <ul>
+                            <li>От 0</li>
+                            <li>До 3000</li>
+                        </ul>
+                    </div>
+                    <!--не знаю правильно или нет-->
+                    <input type="range" name="pickprices" min="0" max="3000" step="10"><br><br>
+                    <input type="submit" name="button" value="Показать">
+                </fieldset>
+            </form>
+        </section>
+
+        <section class="hotels">
+            <div class="list-search">
+                <p>Найдено: <span>3</span></p>
+                <p>Сортировка:</p>
+                <ul class="sorting">
+                    <li class="hotels-sorting"><a href="#">По цене</a></li>
+                    <li class="hotels-sorting"><a href="#">По типу</a></li>
+                    <li class="hotels-sorting"><a href="#">По рейтингу</a></li>
+                </ul>
+            </div>
+            <div class="list-buttons">
+                <button type="button">
+                    <img src="img/icon-up-dir.svg" alt="вверх">
+                </button>
+                <button type="button">
+                    <img src="img/icon-down-dir.svg" alt="вниз">
+                </button>
+            </div>
+            <ul class="hotels-list">
+                <li class="hotels-list list-1">
 
                     <div class="amara-image">
                        <img src="img/amara-resort.jpg" alt="отель амара резорт">
