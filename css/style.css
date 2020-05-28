@@ -1,0 +1,253 @@
+:root {
+  --basic-white: #FFFFFF;
+  --basic-black: #000000;
+  --basic-light-black: #333333;
+  --basic-blue: #81B3D2;
+  --basic-grey: #EEEEEE;
+  --basic-brown: #766357;
+  
+  --rating-grey: #F2F2F2;
+  --rating-color: #666666;
+  
+  --hover-blue: #669EC0;
+  --active-blue: #5496BD;
+  --hover-brown: #604E43;
+  --active-brown: #503E33;
+  --background-form: #F2F2F2;
+  --hover-background-form: #EBEBEB;
+}
+
+
+body {
+  min-width: 1200px;
+  margin: 0;
+  padding: 0;
+  font-family: 'PT Sans', sans-serif;
+  font-size: 14px;
+  line-height: 21px;
+  text-transform: uppercase;
+  color: var(--basic-light-black);
+}
+
+
+.wrapper{
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+
+a {
+  text-decoration: none;
+}
+
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/*Шапка*/
+
+.menu{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+
+.menu-link a{
+  font-size: 14px;
+  line-height: 26px;
+  color: var(--basic-black);
+  font-weight: bold;
+}
+
+
+.menu-link a:hover{
+  color: var(--basic-blue);
+}
+
+
+.menu-link a:active{
+  opacity: 0.3;
+  color: var(--basic-brown);
+}                                       
+
+
+.active a{
+  color: var(--basic-brown);
+}
+
+
+/*ниже-main*/
+
+.block-slang {
+  background-color: var(--basic-blue);
+  background-image: url("../img/bg.jpg");
+  background-repeat: no-repeat;
+}
+
+
+.block-sedona{
+  text-align: center;
+  line-height: 26px;
+}
+
+
+.block-sedona p:first-child{
+  font-size: 21px;
+  font-weight: bold;
+  line-height: 26px;
+}
+
+.hotel-search{
+  text-align: center;
+  line-height: 24px;
+}
+
+
+.hotel-search h2{
+  font-size: 30px;
+  line-height: 26px;
+}
+
+
+.form-search{
+  display: none;
+}
+
+
+.hotels-list{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+
+.rating{
+  background-color: var(--rating-grey);
+  color: var(--rating-color);
+}
+
+
+/*ниже-кнопки и ссылки*/
+
+
+.button {
+  background-color: var(--basic-brown);
+  color: var(--basic-white);
+  font-size: 21px;
+  text-transform: inherit;
+  font-family:"PT Sans", sans-serif;
+  font-weight: bold;
+  line-height: 26px;
+}
+
+
+.button:hover{
+  background-color: var(--hover-brown);
+}
+
+
+.button:active{
+  background-color: var(--active-brown);
+  color: var(--basic-white);
+}
+
+.button span:active{
+  opacity: 0.3;
+}
+
+
+.reservation{
+  font-size: 14px;
+}
+
+
+.button-link {
+  background-color: var(--basic-blue);
+  color: var(--basic-white);
+  font-size: 21px;
+  text-transform: inherit;
+  line-height: 27px;
+  font-family:"PT Sans", sans-serif;
+  font-weight: bold;
+}
+
+
+.button-link:hover{
+  background-color: var(--hover-blue);
+}
+
+
+.button-link:active{
+  background-color: var(--active-blue);
+}
+
+.button-link span:active{
+  opacity: 0.3;
+}
+
+
+.details{
+  font-size: 14px;
+  line-height: 21px;
+}
+
+
+.phone-number{
+  color: var(--basic-black);
+  font-size: 21px;
+  font-weight: bold;
+}
+
+.phone-number a{
+  color: var(--basic-black);
+}
+
+
+.status-link{
+  color: var(--basic-black);
+}
+
+
+.status-link:hover{
+  color: var(--basic-blue);
+}
+
+
+.status-link:active{
+  color: var(--basic-black);
+  opacity: 0.3;
+}
+
+
+svg:hover rect{
+  fill: var(--hover-blue);
+}
+
+svg:active rect{
+  fill: var(--active-blue);
+}
+
+
+svg:active path{
+  opacity: 0.3;
+}
+
+
+.logo-html{
+  width: 115px;
+  height: 46px;
+  fill: var(--basic-black);
+}
+
+
+.logo-html:hover path{
+  fill: var(--basic-blue);
+}
+
+
+.logo-html:active path{
+  opacity: 0.3;
+}
