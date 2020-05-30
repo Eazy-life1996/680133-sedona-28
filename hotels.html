@@ -53,16 +53,16 @@
                     <legend>Тип жилья:</legend>
                     <ul class="housing-list">
                        <li class="h-list">
-                         <input type="checkbox" name="hotel" id="hotel" checked>
-                         <label for="hotel">Гостиница</label>
+                         <input class="check-input" type="checkbox" name="hotel" id="hotel" checked>
+                         <label class="check" for="hotel">Гостиница</label>
                        </li>
                        <li class="h-list">
-                         <input type="checkbox" name="motel" id="motel" checked>
-                         <label for="motel">Мотель</label>
+                         <input class="check-input" type="checkbox" name="motel" id="motel" checked>
+                         <label class="check" for="motel">Мотель</label>
                        </li>
                        <li class="h-list">
-                         <input type="checkbox" name="apartments" id="apartments" checked>
-                         <label for="apartments">Апартаменты</label>
+                         <input class="check-input" type="checkbox" name="apartments" id="apartments" checked>
+                         <label class="check" for="apartments">Апартаменты</label>
                        </li>
                     </ul>
                 </fieldset>
@@ -70,11 +70,11 @@
                     <legend>Стоимость в сутки (р):</legend>
                         <ul class="form-filter">
                             <li class="form-filter-price min">
-                                <label for="filter-min">От</label>
+                                <label class="check" for="filter-min">От</label>
                                 <input type="number" name="min-price" id="filter-min" min="0" max="99999" value="0">
                             </li>
                             <li class="form-filter-price max">
-                                <label for="filter-max">До</label>
+                                <label class="check" for="filter-max">До</label>
                                 <input type="number" name="max-price" value="3000" id="filter-max" min="0" max="99999">
                             </li>
                         </ul>
@@ -90,7 +90,7 @@
                                 </div>
                             </div>
                         </div>
-                    <input type="submit" name="button" value="Показать">
+                    <input class="price-button" type="submit" name="button" value="Показать">
                 </fieldset>
             </form>
         </section>
@@ -133,12 +133,12 @@
                         <tr>
                           <td>
                             <a href="#" class="button-link details">
-                               <span>Подробнее</span>
+                               Подробнее
                             </a>
                           </td>
                           <td>
                            <button class="button reservation">
-                               <span>Забранировать</span>
+                               Забранировать
                            </button>
                           </td>
                        </tr>
@@ -166,12 +166,12 @@
                          <tr>
                            <td>
                            <a href="#" class="button-link details">
-                              <span>Подробнее</span>
+                              Подробнее
                            </a>
                            </td>
                            <td>
                            <button class="button reservation">
-                              <span>Забранировать</span>
+                              Забранировать
                            </button>
                            </td>
                          </tr>
@@ -198,12 +198,12 @@
                          <tr>
                            <td>
                            <a href="#" class="button-link details">
-                              <span>Подробнее</span>
+                              Подробнее
                            </a>
                            </td>
                            <td>
                            <button class="button reservation">
-                              <span>Забранировать</span>
+                              Забранировать
                            </button>
                            </td>
                          </tr>
