@@ -11,19 +11,23 @@
 
   <div class="wrapper">
   
-  <header>
-        <nav>
-            <ul class="menu">
-                <li class="menu-link"><a href="#">Информация</a></li>
-                <li class="menu-link"><a href="#">Фото и видео</a></li>
-                <li class="menu-link"><a href="#">Карта штата</a></li>
-                <li class="menu-link active"><a href="hotels.html">Гостиницы</a></li>
+     <header class="header">
+        <nav class="nav">
+            <ul class="menu menu-1">
+                <li class="menu-link link-left"><a href="#">Информация</a></li>
+                <li class="menu-link link-left"><a href="#">Фото и видео</a></li>
             </ul>
-            <div class="menu-icon">
-                <a href="index.html">
-                    <img src="img/logo-sedona.svg" width="138" height="70" alt="на главную">
-                </a>
+
+             <div class="menu-icon">
+               <a href="index.html">
+                  <img src="img/logo-sedona.svg" width="138" height="70" alt="Иконка">
+               </a>
             </div>
+
+            <ul class="menu menu-2">
+                <li class="menu-link link-right"><a href="#">Карта штата</a></li>
+                <li class="menu-link link-right active"><a href="hotels.html">Гостиницы</a></li>
+            </ul>
         </nav>
     </header>
 
@@ -89,8 +93,8 @@
                                     </div>
                                 </div>
                             </div>
+                            <input class="price-button" type="submit" name="button" value="Показать">
                         </div>
-                    <input class="price-button" type="submit" name="button" value="Показать">
                 </fieldset>
             </form>
         </section>
@@ -123,12 +127,12 @@
                 <li class="hotels-list list-1">
 
                     <div class="amara-image">
-                       <img src="img/amara-resort.jpg" alt="отель амара резорт">
+                            <img src="img/amara-resort.jpg" width="135" height="90" alt="отель амара резорт">
                     </div>
 
                     <div class="amara-table">
                     <h3><a href="#" class="status-link">Amara resort & spa</a></h3>
-                      <table>
+                      <table class="table">
                         <tr><td>Гостиница</td><td>От 4000р.</td></tr>
                         <tr>
                           <td>
@@ -146,17 +150,19 @@
                     </div>
 
                     <div class="amara-rating">
-                        <img src="img/star.svg" alt="Четыре звезды">
-                        <img src="img/star.svg" alt="">
-                        <img src="img/star.svg" alt="">
-                        <img src="img/star.svg" alt="">
+                        <div>
+                           <img src="img/star.svg" alt="Четыре звезды">
+                           <img src="img/star.svg" alt="">
+                           <img src="img/star.svg" alt="">
+                           <img src="img/star.svg" alt="">
+                        </div>
                         <span class="rating">Рейтинг: 8,5</span>
                     </div>
                 </li>
                 <li class="hotels-list list-2">
 
                     <div class="desert-image">
-                       <img src="img/desert-quail-inn.jpg" alt="отель дезерт куал ин">
+                       <img src="img/desert-quail-inn.jpg" width="135" height="90" alt="отель дезерт куал ин">
                     </div>
                     
                     <div class="desert-table">
@@ -179,16 +185,18 @@
                     </div>
 
                     <div class="desert-rating">
-                        <img src="img/star.svg" alt="Три звезды">
-                        <img src="img/star.svg" alt="">
-                        <img src="img/star.svg" alt="">
+                        <div>
+                           <img src="img/star.svg" alt="Три звезды">
+                           <img src="img/star.svg" alt="">
+                           <img src="img/star.svg" alt="">
+                        </div>
                         <span class="rating">Рейтинг: 8,9</span>
                     </div>
     			</li>
     			<li class="hotels-list list-3">
 
                     <div class="villas-image">
-                        <img src="img/villas.jpg" alt="отель вилас эт поко диабло">
+                        <img src="img/villas.jpg" width="135" height="90" alt="отель вилас эт поко диабло">
                     </div>
 
                     <div class="villas-table">
@@ -211,8 +219,10 @@
                     </div>
 
                     <div class="villas-rating">
-                        <img src="img/star.svg" alt="Две звезды">
-                        <img src="img/star.svg" alt="">
+                        <div>
+                            <img src="img/star.svg" alt="Две звезды">
+                            <img src="img/star.svg" alt="">
+                        </div>
                         <span class="rating">Рейтинг: 9,2</span>
                     </div>
     			</li>

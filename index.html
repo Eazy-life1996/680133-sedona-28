@@ -13,15 +13,17 @@
 
     <header class="header">
         <nav class="nav">
-            <ul class="menu">
-                <li class="menu-link"><a href="#">Информация</a></li>
-                <li class="menu-link"><a href="#">Фото и видео</a></li>
-                <li class="menu-link"><a href="#">Карта штата</a></li>
-                <li class="menu-link"><a href="hotels.html">Гостиницы</a></li>
+            <ul class="menu menu-1">
+                <li class="menu-link link-left"><a href="#">Информация</a></li>
+                <li class="menu-link link-left"><a href="#">Фото и видео</a></li>
             </ul>
-            <div class="menu-icon">
-                    <img src="img/logo-sedona.svg" width="138" height="70" alt="Иконка">
+             <div class="menu-icon">
+                <img src="img/logo-sedona.svg" width="138" height="70" alt="Иконка">
             </div>
+            <ul class="menu menu-2">
+                <li class="menu-link link-right"><a href="#">Карта штата</a></li>
+                <li class="menu-link link-right"><a href="hotels.html">Гостиницы</a></li>
+            </ul>
         </nav>
     </header>
 
@@ -32,15 +34,15 @@
                 <img src="img/welcome.svg" alt="">
             </div>
             <div class="mask">
-                <img src="img/intro-mask.svg" alt="">
+                <img src="img/intro-mask.svg" width="1200" height="57" alt="">
             </div>
     	</section>
-        
+
         <section class="block-sedona">
-            <p>
-                Седона - небольшой городок в аризоне
+            <div>
+                Седона - небольшой городок в аризоне,
                 заслуживающий большего!
-            </p>
+            </div>
             <p>
                 Рассмотрим 5 причин, по которым седона круче чем, гранд каньон
             </p>
@@ -49,21 +51,23 @@
         <section class="block-reasons">
             <ol class="block-reasons-list-1">
 
-                <li class="block-reasons-item">
+                <li class="block-reasons-item li-grid-1">
                     <div class="description-1">
-                      <h3>
-                      Настоящий городок
-                      </h3>
-                      <p>
-                        - №1 -
-                      </p>
-                      <p>
-                        Седона - не аттракцион для туристов, там
-                        течёт своя жизнь
-                      </p>
+                       <div>
+                          <h3>
+                          Настоящий городок
+                          </h3>
+                          <p>
+                          - №1 -
+                          </p>
+                          <p>
+                            Седона - не аттракцион для туристов, там
+                            течёт своя жизнь
+                          </p>
+                       </div>
                     </div>
                     <div class="image-1">
-                      <img src="img/sedona.jpg" alt="Городок Седона">
+                      <img src="img/sedona.jpg" width="800" height="256" alt="Городок Седона">
                     </div>
                 </li>
 
@@ -71,52 +75,61 @@
             <ul class="conditions-1">
 
                 <li class="conditions-list-1">
+                  <div class="house">
                     <img src="img/icon-1.svg" alt="">
                     <h3>Жилье</h3>
                     <p>
                         Рекомендуем пожить в настоящем
                         мотеле, все как в кино!
                     </p>
+                  </div>
                 </li>
 
                 <li class="conditions-list-1">
+                  <div class="food">
                     <img src="img/icon-3.svg" alt="">
                     <h3>Еда</h3>
                     <p>
                         Всегда заказывайте фирменный бургер,
                         вы не разочаруетесь!
                     </p>
+                  </div>
                 </li>
 
                 <li class="conditions-list-1">
+                  <div class="present">
                     <img src="img/icon-2.svg" alt="">
                     <h3>Сувениры</h3>
                     <p>
                         Не только китайского, но и местного
                         производства!
                     </p>
+                  </div>
                 </li>
             </ul>
             <ol start="2" class="block-reasons-list-2">
-                <li class="block-reasons-item">
+                <li class="block-reasons-item li-grid-2">
                     <div class="image-2">
                         <img src="img/bridge.jpg" alt="Мост дьявола">
                     </div>
                     <div class="description-2">
-                        <h3>
-                           Там есть мост дьявола
-                        </h3>
-                        <p>
-                           - №2 -
-                        </p>
-                        <p>
-                           Да, по нему можно пройти! если конечно
-                           вы осмелитесь
-                        </p>
+                      <div>
+                          <h3>
+                             Там есть мост дьявола
+                          </h3>
+                          <p>
+                             - №2 -
+                          </p>
+                          <p>
+                             Да, по нему можно пройти! если конечно
+                             вы осмелитесь
+                          </p>
+                      </div>
                     </div>
                 </li>
 
                 <li class="conditions-list-2">
+                  <div>
                     <h3>
                         Небольшая площадь
                     </h3>
@@ -127,9 +140,11 @@
                         Все достопримечательности
                         находятся очень близко
                     </p>
+                  </div>
                 </li>
 
                 <li class="conditions-list-2">
+                  <div class="road">
                     <h3>
                         Красивая дорога
                     </h3>
@@ -140,9 +155,11 @@
                         Ехать в седону из лас-вегаса совсем
                         не скучно!
                     </p>
+                  </div>
                 </li>
 
                 <li class="conditions-list-2">
+                  <div>
                     <h3>
                         Мало туристов
                     </h3>
@@ -153,19 +170,24 @@
                         Большинство едет в гранд каньон
                         и толпится там
                     </p>
+                  </div>
                 </li>
             </ol>
         </section>
 
 
         <section class="hotel-search">
-            <h2>
-               Заинтересовались?
-            </h2>
-            <p>
-                Укажите предпологаемые даты поездки,
-                и мы покажем вам лучшие предложения гостиниц в седоне
-            </p>
+            <div class="search-block">
+                <div>
+                   <h2>
+                      Заинтересовались?
+                   </h2>
+                   <p>
+                      Укажите предпологаемые даты поездки,
+                      и мы покажем вам лучшие предложения гостиниц в седоне
+                   </p>
+                </div>
+            </div>
             <button class="button">
                 Поиск гостиницы в седоне
             </button>
