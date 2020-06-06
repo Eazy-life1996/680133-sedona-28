@@ -74,23 +74,28 @@
                     <legend>Стоимость в сутки (р):</legend>
                         <ul class="form-filter">
                             <li class="form-filter-price min">
-                                <label class="check" for="filter-min">От</label>
-                                <input type="number" name="min-price" id="filter-min" min="0" max="99999" value="0">
+                                <label class="check">
+                                    От<input type="number" name="min-price" min="0" max="99999" value="0">
+                                </label>
+                            </li>
+                            <li class="vertical">
                             </li>
                             <li class="form-filter-price max">
-                                <label class="check" for="filter-max">До</label>
-                                <input type="number" name="max-price" value="3000" id="filter-max" min="0" max="99999">
+                                <label class="check">
+                                    До<input type="number" name="max-price" value="3000" min="0" max="99999">
+                                </label>
                             </li>
                         </ul>
-                        <div class="range">
-                            <div class="slider-1">
-                                <div class="slider-2">
-                                    <div class="hit">
-                                        <img src="img/filter-button.svg" alt="">
-                                    </div>
-                                    <div class="hit">
-                                        <img src="img/filter-button.svg" alt="">
-                                    </div>
+                           <div class="range">
+                               <div class="range-controls">
+                                   <div class="slider-1">
+                                       <div class="slider-2"></div>
+                                   </div>
+                                <div class="hit hit-min" tabindex="0">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="23" viewBox="0 0 20 23"><path opacity=".3" fill="#ABABAB" d="M10 20C4.477 20 0 15.522 0 10v2c0 5.522 4.477 10 10 10 5.522 0 10-4.478 10-10v-2c0 5.522-4.478 10-10 10z"/><circle fill="#FFF" cx="10" cy="10" r="10"/><circle fill="#ABABAB" cx="10" cy="10" r="2"/></svg>
+                                </div>
+                                <div class="hit hit-max" tabindex="0">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="23" viewBox="0 0 20 23"><path opacity=".3" fill="#ABABAB" d="M10 20C4.477 20 0 15.522 0 10v2c0 5.522 4.477 10 10 10 5.522 0 10-4.478 10-10v-2c0 5.522-4.478 10-10 10z"/><circle fill="#FFF" cx="10" cy="10" r="10"/><circle fill="#ABABAB" cx="10" cy="10" r="2"/></svg>
                                 </div>
                             </div>
                             <input class="price-button" type="submit" name="button" value="Показать">
@@ -231,7 +236,7 @@
     </main>
     
 
-    <footer class="footer">
+    <footer class="footer footer-hotel">
         <div class="phone-number">
             <p>#visitsedona</p>
             <a href="tel:+74956660166">ТЕЛ: +7(495) 666-01-66</a>
