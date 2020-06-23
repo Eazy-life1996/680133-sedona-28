@@ -15,9 +15,6 @@ try {
   isStorageSupport = false;
 }
 
-localStorage.setItem("login", adultUsers.value);
-localStorage.setItem("login", childUsers.value);
-
 buttonShow.addEventListener("click", function (evt) {
     evt.preventDefault();
     formBlock.classList.toggle("form-search-none");
@@ -32,6 +29,9 @@ formValidation.addEventListener("submit", function (evt) {
         formBlock.classList.remove("form-error");
         formBlock.offsetWidth = formBlock.offsetWidth;
         formBlock.classList.add("form-error");
+    } else {
+        localStorage.setItem("login", adultUsers.value);
+        localStorage.setItem("login", childUsers.value);
     }
 });
 
