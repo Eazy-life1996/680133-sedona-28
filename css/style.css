@@ -1,4 +1,4 @@
-/*
+  /*
 * Prefixed by https://autoprefixer.github.io
 * PostCSS: v7.0.29,
 * Autoprefixer: v9.7.6
@@ -184,12 +184,12 @@ img {
   text-align: center;
   width: 251px;
   min-height: 61px;
-  margin-left: 26px;
+  margin-left: 27px;
   padding-top: 12px;
 }
 
 .footer .phone-number p{
-  margin: 15px;
+  margin: 14px;
 }
 
 
@@ -225,7 +225,7 @@ footer .footer-developer{
   position: relative;
   background-image: url("../img/map.jpg");
   width: 1200px;
-  height: 572px;
+  height: 568px;
 }
 
 
@@ -237,7 +237,7 @@ footer .footer-developer{
   flex-wrap: wrap;
   justify-content: space-around;
   position: absolute;
-  bottom: -22px;
+  bottom: -26px;
 }
 
 
@@ -271,8 +271,7 @@ footer .footer-developer{
 .index-footer .footer-developer{
   min-height: 41px;
   display: grid;
-  align-self: center;
-  grid-template-columns: 74px 115px;
+  grid-template-columns: auto 115px;
   -moz-column-gap: 8px;
        column-gap: 8px;
   margin-right: 55px;
@@ -285,6 +284,13 @@ footer .footer-developer{
 
 
 /*ниже-main*/
+
+
+.wrapper input:focus,
+.wrapper a:focus,
+.wrapper button:focus{
+  outline: 3px solid var(--basic-black);
+}
 
 
 .block-slang {
@@ -332,8 +338,6 @@ footer .footer-developer{
   flex-direction: column;
   width: 1200px;
   min-height: 216px;
-  justify-content: center;
-  box-sizing: border-box;
 }
 
 
@@ -346,7 +350,7 @@ footer .footer-developer{
   line-height: 27px;
   font-weight: bold;
   color: var(--basic-black);
-  margin-top: -16px;
+  margin-top: 36px;
 }
 
 
@@ -429,7 +433,7 @@ footer .footer-developer{
 
 .conditions-list-2 div{
   width: 250px;
-  margin-top: 48px;
+  margin-top: 43px;
   align-self: center;
   min-height: 155px;
 }
@@ -442,7 +446,7 @@ footer .footer-developer{
 
 
 .conditions-list-2 p{
-  margin-top: 25px;
+  margin-top: 23px;
 }
 
 
@@ -460,7 +464,6 @@ footer .footer-developer{
 
 
 .description-2 h3{
-  margin-top: -10px;
   color: var(--basic-white);
   line-height: 22px;
   margin: 0;
@@ -475,7 +478,7 @@ footer .footer-developer{
 
 
 .text-field-2 p{
-  margin-top: 25px;
+  margin-top: 22px;
   line-height: 22px;
 }
 
@@ -559,7 +562,7 @@ footer .footer-developer{
 
 
 .search-block{
-  min-height: 205px;
+  min-height: 200px;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -567,7 +570,7 @@ footer .footer-developer{
 
 
 .search-block div{
-  width: 435px;
+  width: 455px;
   min-height: 137px;
   align-self: center;
 }
@@ -585,6 +588,11 @@ footer .footer-developer{
   line-height: 26px;
   color: var(--basic-black);
   margin-bottom: 30px;
+}
+
+
+.hotel-search p{
+  margin-bottom: 17px;
 }
 
 
@@ -845,7 +853,6 @@ footer .footer-developer{
   background-repeat: no-repeat;
   color: var(--basic-white);
   min-height: 216px;
-  box-sizing: border-box;
 }
 
 
@@ -871,8 +878,13 @@ form{
 }
 
 
-.info-field li{
-  margin-top: 24px;
+.check-input:focus + label::after{
+  outline: 3px solid var(--basic-black);
+}
+
+
+.hit:focus{
+  outline: 3px solid var(--basic-black);
 }
 
 
@@ -880,10 +892,15 @@ form{
   content: "";
   position: absolute;
   top: -1px;
-  left: -40px;
+  left: -41px;
   width: 26px;
   height: 23px;
   background-image: url("../img/checkbox-on.svg");
+}
+
+
+.check-input:checked + label::after:focus{
+  outline: 3px solid black;
 }
 
 
@@ -891,14 +908,14 @@ form{
   content: "";
   position: absolute;
   top: -1px;
-  left: -40px;
+  left: -41px;
   width: 23px;
   height: 23px;
   background-image: url("../img/checkbox-off.svg");
 }
 
 
-.check-input:disabled +label::after{
+.check-input:disabled + label::after{
   background-image: url("../img/checkbox-dis.svg");
 }
 
@@ -923,7 +940,7 @@ form{
 
 .infrastructure-list li{
   margin-left: 40px;
-  margin-top: 26px;
+  margin-top: 25px;
 }
 
 
@@ -941,8 +958,8 @@ form{
 
 
 .housing-list li{
-  margin-left: 40px;
-  margin-top: 26px;
+  margin-left: 42px;
+  margin-top: 25px;
 }
 
 
@@ -960,21 +977,20 @@ form{
   border: 2px solid var(--basic-white);
   border-radius: 2px;
   display: flex;
-  justify-items: center;
   justify-content: center;
 }
 
 
 .max{
   box-sizing: border-box;
-  padding-left: 62px;
+  padding-left: 57px;
   padding-top: 4px;
 }
 
 
 .min{
   box-sizing: border-box;
-  padding-left: 53px;
+  margin-left: 52px;
   padding-top: 4px;
 }
 
@@ -986,6 +1002,7 @@ form{
   margin-left: 5px;
   position: absolute;
   top: 5px;
+  left: 154px;
 }
 
 
@@ -998,7 +1015,7 @@ form{
   font-family: "PT Sans", Arial, sans-serif;
   font-size: 14px;
   line-height: 21px;
-  padding-left: 5px;
+  padding-left: 4px;
 }
 
 
@@ -1033,7 +1050,7 @@ input[type=number] {
 .range-controls{
   height: 29px;
   padding-top: 20px;
-  padding-left: 9px;
+  padding-left: 7px;
   position: relative;
 }
 
@@ -1055,14 +1072,14 @@ input[type=number] {
 .hit-min{
   position: absolute;
   top: 11px;
-  left: 4px;
+  left: 2px;
 }
 
 
 .hit-max{
   position: absolute;
   top: 11px;
-  left: 255px;
+  left: 253px;
 }
 
 
@@ -1109,6 +1126,7 @@ input[type=number] {
 
 .list-search{
   display: flex;
+  flex-wrap: wrap;
   justify-content: flex-start;
   min-height: 86px;
   border-bottom: 1px solid var(--border-grey);
@@ -1144,14 +1162,18 @@ input[type=number] {
   padding-left: 0;
   display: flex;
   flex-wrap: wrap;
-  width: 239px;
-  justify-content: space-between;
-  margin-top: -7px;
+  min-width: 239px;
+  margin-bottom: 7px;
 }
 
 
 .hotels-sorting{
-  align-self: center;
+  margin-top: 30px;
+}
+
+
+.sorting li:not(:first-child){
+  margin-left: 33px;
 }
 
 
@@ -1227,7 +1249,7 @@ input[type=number] {
   margin: 0;
   padding: 0;
   width: 1200px;
-  min-height: 149px;
+  min-height: 150px;
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
@@ -1263,12 +1285,12 @@ input[type=number] {
   flex-direction: column;
   justify-content: space-between;
   margin-left: 24px;
-  min-height: 96px;
+  margin-bottom: 2px;
 }
 
 
 .table tr:first-child{
-  height: 45px;
+  height: 40px;
 }
 
 
@@ -1314,9 +1336,8 @@ h3 a{
 .desert-table{
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   margin-left: 24px;
-  min-height: 96px;
+  margin-bottom: 2px;
 }
 
 
@@ -1343,7 +1364,7 @@ h3 a{
   flex-direction: column;
   justify-content: space-between;
   margin-left: 24px;
-  min-height: 96px;
+  margin-bottom: 3px;
 }
 
 

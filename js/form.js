@@ -10,9 +10,10 @@ let isStorageSupport = true;
 let storage = "";
 
 try {
-  storage = localStorage.getItem("login");
+    adultUsers.value = localStorage.getItem("adultUsers");
+    childUsers.value = localStorage.getItem("childUsers");
 } catch (err) {
-  isStorageSupport = false;
+    isStorageSupport = false;
 }
 
 buttonShow.addEventListener("click", function (evt) {
@@ -30,8 +31,10 @@ formValidation.addEventListener("submit", function (evt) {
         formBlock.offsetWidth = formBlock.offsetWidth;
         formBlock.classList.add("form-error");
     } else {
-        localStorage.setItem("login", adultUsers.value);
-        localStorage.setItem("login", childUsers.value);
+        if (isStorageSupport) {
+            localStorage.setItem("adultUsers", adultUsers.value);
+            localStorage.setItem("childUsers", childUsers.value);
+        }
     }
 });
 
