@@ -16,9 +16,9 @@ try {
     isStorageSupport = false;
 }
 
-buttonShow.addEventListener("click", function (evt) {
-    evt.preventDefault();
-    formBlock.classList.toggle("form-search-none");
+formBlock.classList.remove("form-search");
+
+buttonShow.addEventListener("click", function () {
     formBlock.classList.toggle("form-search");
     arrivalDate.focus();
     formBlock.classList.remove("form-error");

@@ -10,6 +10,8 @@
   --rgba-white: rgba(255,255,255,0.3);
   --rgba-white-footer: rgba(255,255,255,0.9);
   --rgba-white-check: rgba(255,255,255,0);
+  --rgba-form-shadow: rgba(0, 1, 1, 0.15);
+  --rgba-wrapper-shadow: rgba(0, 1, 1, 0.2);
   --basic-black: #000000;
   --basic-light-black: #333333;
   --basic-blue: #81B3D2;
@@ -60,7 +62,7 @@ body {
 .wrapper{
   background-color: var(--basic-white);
   position: relative;
-  box-shadow: 0px 5px 15px rgba(0, 1, 1, 0.2);
+  box-shadow: 0px 5px 15px var(--rgba-wrapper-shadow);
   width: 1200px;
   margin: 0 auto;
   display: grid;
@@ -204,7 +206,7 @@ img {
 }
 
 
-footer .footer-developer{
+.footer-developer{
   min-height: 41px;
   display: grid;
   align-self: center;
@@ -596,17 +598,32 @@ footer .footer-developer{
 }
 
 
+.form-search-none{
+  display: none;
+  position: absolute;
+  left: 315px;
+  width: 513px;
+  padding-left: 55px;
+  font-weight: bold;
+  background-color: var(--basic-white);
+  color: var(--basic-black);
+  box-shadow: 0px 7px 15px var(--rgba-form-shadow);
+  display: none;
+  z-index: 1;
+  animation: up 0.2s;
+}
+
+
 .form-search{
   position: absolute;
   left: 315px;
-  width: 568px;
+  width: 513px;
+  padding-left: 55px;
   font-weight: bold;
-  display: block;
   background-color: var(--basic-white);
   color: var(--basic-black);
-  box-shadow: 0px 7px 15px rgba(0, 1, 1, 0.15);
-  display: flex;
-  justify-content: center;
+  box-shadow: 0px 7px 15px var(--rgba-form-shadow);
+  display: block;
   z-index: 1;
   animation: up 0.2s;
 }
@@ -614,11 +631,6 @@ footer .footer-developer{
 
 .form-error{
   animation: shake 0.8s;
-}
-
-
-.form-search-none{
-  display: none;
 }
 
 
@@ -862,7 +874,7 @@ footer .footer-developer{
 }
 
 
-form{
+.hotels-form{
   display: flex;
   flex-wrap: wrap;
   width: 1200px;
@@ -1304,7 +1316,7 @@ input[type=number] {
 }
 
 
-h3 a{
+.name-hotel a{
   font-size: 21px;
   display: block;
 }
@@ -1527,17 +1539,17 @@ h3 a{
 }
 
 
-svg:hover rect{
+.footer-svg:hover rect{
   fill: var(--hover-blue);
 }
 
 
-svg:active rect{
+.footer-svg:active rect{
   fill: var(--active-blue);
 }
 
 
-svg:active path{
+.footer-svg:active path{
   opacity: 0.3;
 }
 
